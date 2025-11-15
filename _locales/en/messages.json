@@ -8,6 +8,9 @@
   "optionsTitle": {
     "message": "Settings"
   },
+  "optionsEnableExtension": {
+    "message": "Activate the extension"
+  },
   "optionsEnableAutoClick": {
     "message": "Automatically click the final 'Delete this repository' button"
   },
@@ -22,5 +25,8 @@
   },
   "welcomeAgreePartial": {
     "message": "Agree to automation other than the last step"
+  },
+  "warningMessage": {
+    "message": "Warning: Quick Repo Deleter is active!"
   }
 }

@@ -8,6 +8,9 @@
   "optionsTitle": {
     "message": "設定"
   },
+  "optionsEnableExtension": {
+    "message": "拡張機能を有効化する"
+  },
   "optionsEnableAutoClick": {
     "message": "最後の「Delete this repository」ボタンも自動で押す"
   },
@@ -25,5 +28,8 @@
   },
   "welcomeAgreePartial": {
     "message": "最後のステップ以外は同意して続ける"
+  },
+  "warningMessage": {
+    "message": "警告: Quick Repo Deleterが有効です！"
   }
 }

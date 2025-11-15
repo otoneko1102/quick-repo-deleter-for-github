@@ -7,26 +7,148 @@
       body {
         font-family: sans-serif;
         width: 300px;
-        padding: 10px;
+        padding: 16px;
+        background-color: #f6f8fa;
+        color: #24292e;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        box-sizing: border-box;
       }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #0d1117;
+          color: #c9d1d9;
+        }
+        h3 {
+          border-bottom-color: #21262d !important;
+        }
+        hr {
+          border-top-color: #21262d !important;
+        }
+        .switch-toggle::before {
+          background-color: #30363d !important;
+        }
+        .switch-toggle:checked::before {
+          background-color: #238636 !important;
+        }
+        label:hover {
+          background-color: rgba(255, 255, 255, 0.05) !important;
+        }
+        label.disabled:hover {
+          background-color: transparent !important;
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 12px 0;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d0d7de;
+      }
+
       label {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         cursor: pointer;
+        padding: 8px 4px;
+        margin-bottom: 0;
+        border-radius: 6px;
+        transition: background-color 0.1s ease;
       }
+      label:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      label.disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+      label.disabled:hover {
+        background-color: transparent;
+      }
+
+      .switch-toggle {
+        -webkit-appearance: none;
+        appearance: none;
+        position: relative;
+        width: 40px;
+        height: 24px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        flex-shrink: 0;
+        margin-left: 10px;
+      }
+
+      .switch-toggle::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #d0d7de;
+        border-radius: 12px;
+        transition: background-color 0.2s ease;
+      }
+
+      .switch-toggle::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+
+      .switch-toggle:checked::before {
+        background-color: #2ea44f;
+      }
+      .switch-toggle:checked::after {
+        transform: translateX(16px);
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid #d0d7de;
+        margin: 8px 0;
+      }
+
       #status {
-        margin-top: 10px;
-        font-weight: bold;
-        color: green;
+        margin-top: 12px;
+        font-weight: 500;
+        color: #2ea44f;
+        font-size: 13px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      #status.visible {
+        opacity: 1;
       }
     </style>
   </head>
   <body>
     <h3 id="options-title"></h3>
 
-    <label>
-      <input type="checkbox" id="autoClickFinalDelete" />
+    <label for="extensionEnabled" id="labelExtensionEnabled">
+      <span id="options-label-enable"></span>
+      <input type="checkbox" id="extensionEnabled" class="switch-toggle" />
+    </label>
+
+    <hr />
+
+    <label for="autoClickFinalDelete" id="labelAutoClick">
       <span id="options-label-auto-click"></span>
+      <input type="checkbox" id="autoClickFinalDelete" class="switch-toggle" />
     </label>
 
     <div id="status"></div>
