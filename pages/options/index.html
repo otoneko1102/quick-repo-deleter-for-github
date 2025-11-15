@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title id="page-title"></title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 300px;
+        padding: 10px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      #status {
+        margin-top: 10px;
+        font-weight: bold;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="options-title"></h3>
+
+    <label>
+      <input type="checkbox" id="autoClickFinalDelete" />
+      <span id="options-label-auto-click"></span>
+    </label>
+
+    <div id="status"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

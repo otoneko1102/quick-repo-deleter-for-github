@@ -1,0 +1,26 @@
+{
+  "appName": {
+    "message": "Quick Repo Deleter for GitHub"
+  },
+  "appDesc": {
+    "message": "Skips the GitHub repo deletion confirmation steps."
+  },
+  "optionsTitle": {
+    "message": "Settings"
+  },
+  "optionsEnableAutoClick": {
+    "message": "Automatically click the final 'Delete this repository' button"
+  },
+  "optionsSaved": {
+    "message": "Settings saved."
+  },
+  "welcomeTitle": {
+    "message": "Welcome to Quick Repo Deleter!"
+  },
+  "welcomeAgreeFull": {
+    "message": "Agree all"
+  },
+  "welcomeAgreePartial": {
+    "message": "Agree to automation other than the last step"
+  }
+}

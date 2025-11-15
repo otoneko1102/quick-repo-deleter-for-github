@@ -1,0 +1,29 @@
+{
+  "appName": {
+    "message": "Quick Repo Deleter for GitHub"
+  },
+  "appDesc": {
+    "message": "GitHubのリポジトリ削除時の確認ステップをスキップします。"
+  },
+  "optionsTitle": {
+    "message": "設定"
+  },
+  "optionsEnableAutoClick": {
+    "message": "最後の「Delete this repository」ボタンも自動で押す"
+  },
+  "optionsSaved": {
+    "message": "設定を保存しました。"
+  },
+  "welcomeTitle": {
+    "message": "Quick Repo Deleterへようこそ"
+  },
+  "welcomeAgreement": {
+    "message": "「同意する」をクリックすると、この拡張機能がGitHubのリポジトリ削除ステップを自動化することに同意したことになります。同意しない場合は、拡張機能をアンインストールしてください。"
+  },
+  "welcomeAgreeFull": {
+    "message": "すべて同意して続ける"
+  },
+  "welcomeAgreePartial": {
+    "message": "最後のステップ以外は同意して続ける"
+  }
+}
