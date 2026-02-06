@@ -1,5 +1,7 @@
 # Quick repo deleter for GitHub
 
-この機能を内包した新しいChrome拡張機能が公開されました。
-そちらに切り替えることを検討してください。
-この拡張機能はもうサポートされません。
+A new Chrome extension has been released with this feature.  
+Consider switching there.  
+This extension is no longer supported.  
+
+Better GitHub Utils: https://chromewebstore.google.com/detail/ddpmlpfdiafndnkdhbopgcmnckngfbgm?utm_source=item-share-cb
